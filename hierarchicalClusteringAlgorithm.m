@@ -1,4 +1,4 @@
-a = [4,   53;
+data = [4,   53;
     5     63;
     10    59;
     9      77;
@@ -75,11 +75,11 @@ a = [4,   53;
     66          23];
 
 
-treefigure1=linkage(a,   'single');
-treefigure2=linkage(a,   'complete');
-treefigure3=linkage(a,   'average');
-treefigure4=linkage(a,   'ward');
-treefigure5=linkage(a,   'centroid');
+treefigure1=linkage(data,   'single');
+treefigure2=linkage(data,   'complete');
+treefigure3=linkage(data,   'average');
+treefigure4=linkage(data,   'ward');
+treefigure5=linkage(data,   'centroid');
 
 subplot(3,2,1)
 dendrogram(treefigure1);

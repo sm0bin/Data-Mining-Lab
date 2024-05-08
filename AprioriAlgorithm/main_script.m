@@ -1,5 +1,5 @@
 % transactions
-transactions = [
+transactions = {
     [1,2,5],
     [2,4],
     [2,3],
@@ -9,13 +9,13 @@ transactions = [
     [1,3],
     [1,2,3,5],
     [1,2,3]
-];
+};
 
 % minSupport
 minSupport = 2;
 
 % Load necessary functions
-addpath('functions');
+% addpath('functions');
 
 % Get frequent one-itemsets
 frequentOneItemsets = getFrequentOneItemsets(transactions, minSupport);
