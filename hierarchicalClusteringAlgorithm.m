@@ -1,4 +1,4 @@
-data = [4,   53;
+data = [4   53;
     5     63;
     10    59;
     9      77;
@@ -75,28 +75,29 @@ data = [4,   53;
     66          23];
 
 
-treefigure1=linkage(data,   'single');
-treefigure2=linkage(data,   'complete');
-treefigure3=linkage(data,   'average');
-treefigure4=linkage(data,   'ward');
-treefigure5=linkage(data,   'centroid');
+% treefigure1=linkage(data);
+dendrogram(linkage(data));
+% treefigure2=linkage(data,   'complete');
+% treefigure3=linkage(data,   'average');
+% treefigure4=linkage(data,   'ward');
+% treefigure5=linkage(data,   'centroid');
 
-subplot(3,2,1)
-dendrogram(treefigure1);
-title('single');
-
-subplot(3,2,2)
-dendrogram(treefigure2);
-title('complete');
-
-subplot(3,2,3)
-dendrogram(treefigure3);
-title('average');
-
-subplot(3,2,4)
-dendrogram(treefigure4);
-title('ward');
-
-subplot(3,2,5)
-dendrogram(treefigure5);
-title('centroid');
+% subplot(3,2,1)
+% dendrogram(treefigure1);
+% title('single');
+% 
+% subplot(3,2,2)
+% dendrogram(treefigure2);
+% title('complete');
+% 
+% subplot(3,2,3)
+% dendrogram(treefigure3);
+% title('average');
+% 
+% subplot(3,2,4)
+% dendrogram(treefigure4);
+% title('ward');
+% 
+% subplot(3,2,5)
+% dendrogram(treefigure5);
+% title('centroid');
